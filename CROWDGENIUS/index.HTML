@@ -1,0 +1,73 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Data Chart Monitor
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100 font-roboto">
+  <div class="container mx-auto p-4">
+   <header class="flex flex-col items-center py-4">
+    <img alt="Company logo with a simple and clean design" class="mb-4" height="50" src="CG transparent.png" width="150"/>
+    <nav class="flex justify-center space-x-4">
+     <ul class="flex space-x-4">
+      <li>
+       <a class="text-gray-700 hover:text-gray-900" href="#">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="text-gray-700 hover:text-gray-900" href="Reports.html">
+        Reports
+       </a>
+      </li>
+      <li>
+       <a class="text-gray-700 hover:text-gray-900" href="#">
+        Settings
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </header>
+   <main class="mt-8">
+    <section class="bg-white p-6 rounded-lg shadow-md">
+     <h2 class="text-xl font-semibold mb-4">
+      Run Report
+     </h2>
+     <p class="mb-4">
+      Click the button below to run the report and log changes in data charts to the Google Drive Excel sheet.
+     </p>
+     <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" id="run-report">
+      <i class="fas fa-play mr-2">
+      </i>
+      Run Report
+     </button>
+    </section>
+    <section class="bg-white p-6 rounded-lg shadow-md mt-8">
+     <h2 class="text-xl font-semibold mb-4">
+      Schedule Report
+     </h2>
+     <p class="mb-4">
+      This feature will allow you to schedule the report to run at specific intervals.
+     </p>
+     <button class="bg-gray-500 text-white px-4 py-2 rounded cursor-not-allowed" disabled="">
+      <i class="fas fa-clock mr-2">
+      </i>
+      Coming Soon
+     </button>
+    </section>
+   </main>
+  </div>
+  <script>
+   document.getElementById('run-report').addEventListener('click', function() {
+            alert('Run Report button clicked. Implement the backend functionality to run the report.');
+            // Implement the backend functionality to run the report
+        });
+  </script>
+ </body>
+</html>
